@@ -26,6 +26,8 @@ def handle_request(request):
     cmd = commands[0].lower()
     if cmd == 'catalog':
         response = ' '.join(lists.keys())
+        if response == '':
+            response = 'No lists created yet'
     elif cmd == 'create':
         lists[commands[1]] = []
         response = f'List "{commands[1]}" created'
