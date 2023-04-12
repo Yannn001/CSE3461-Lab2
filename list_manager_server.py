@@ -30,26 +30,26 @@ def handle_request(request):
         lists[commands[1]] = []
         response = f'List "{commands[1]}" created'
     elif cmd == 'edit':
-        list_num = int(commands[1])
+        list_name = commands[1]
         sub_cmd = commands[2].lower()
         if sub_cmd == 'show':
-            response = ' '.join(lists[list_num])
+            response = ' '.join(lists[list_name])
         elif sub_cmd == 'add':
-            lists[list_num].append(commands[3])
-            response = f'Item "{commands[3]}" added to list "{list_num}"'
+            lists[list_name].append(commands[3])
+            response = f'Item "{commands[3]}" added to list "{list_name}"'
         elif sub_cmd == 'remove':
             item_num = int(commands[3])
-            lists[list_num].pop(item_num)
-            response = f'Item {item_num} removed from list "{list_num}"'
+            lists[list_name].pop(item_num)
+            response = f'Item {item_num} removed from list "{list_name}"'
         elif sub_cmd == 'quit':
             response = 'Edit mode exited'
     elif cmd == 'display':
-        list_num = int(commands[1])
-        response = ' '.join(lists[list_num])
+        list_name = commands[1]
+        response = ' '.join(lists[list_name])
     elif cmd == 'delete':
-        list_num = int(commands[1])
-        del lists[list_num]
-        response = f'List "{list_num}" deleted'
+        list_name = commands[1]
+        del lists[list_name]
+        response = f'List "{list_name}" deleted'
     elif cmd == 'exit':
         response = 'Server shutting down'
     else:
