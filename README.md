@@ -1,6 +1,7 @@
 To run the server and client applications, follow these steps:
 python3 list_manager_server.py 8000
 
+//CHANGE!
 
 In the second terminal, navigate to the directory where you saved the client script and start the client by running:
 python3 list_manager_client.py 127.0.0.1 8000
