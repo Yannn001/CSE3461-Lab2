@@ -63,10 +63,12 @@ def start_server(port):
     server_socket.bind(('0.0.0.0', port))
     server_socket.listen(5)
 
-    print(f'Starting on port {port}')
+    timestamp = datetime.datetime.now().strftime('%a %b %d %H:%M:%S %Y')
+    print(f'{timestamp} Starting on port {port}')
+
     while True:
         connection, address = server_socket.accept()
-        threading.Thread(target=handle_client, args=(connection, address)).start()
+        threading.Thread(target = handle_client, args = (connection, address)).start()
 
 if __name__ == '__main__':
     lists = {}
