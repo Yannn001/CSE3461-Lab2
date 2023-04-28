@@ -1,6 +1,5 @@
 
 
-    ```
     # Simple List Management Server and Client
 
     This project provides a simple list management server and client that allows users to create, edit, display, and delete lists. The server stores lists with an ID number, and users can reference the lists by their ID number for modifications.
@@ -47,4 +46,3 @@
     Replace `<server_ip>` with the IP address of the server and `<server_port>` with the port number on which the server is listening.
 
     Enter the desired commands at the "Enter a command:" prompt. The client will send the command to the server and display the server's response.
-    ```
