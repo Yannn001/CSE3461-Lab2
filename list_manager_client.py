@@ -19,3 +19,4 @@ if __name__ == '__main__':
         print('Response:', response)
         if command.lower() == 'exit':
             break
+        

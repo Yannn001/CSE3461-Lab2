@@ -1,65 +1,50 @@
-This is the README file for CSE 3461
 
-Author: Yixuan Huang, Chengyan Wang
 
-To run the server and client applications, follow these steps:
-python3 list_manager_server.py 8000
+    ```
+    # Simple List Management Server and Client
 
-In the second terminal, navigate to the directory where you saved the client script and start the client by running:
-python3 list_manager_client.py 127.0.0.1 8000
+    This project provides a simple list management server and client that allows users to create, edit, display, and delete lists. The server stores lists with an ID number, and users can reference the lists by their ID number for modifications.
 
-Interact with the list manager:
-Now, you can enter commands in the client terminal to interact with the list manager server. Here's an example interaction:
+    ### The YouTube link for our demonstration video: https://www.youtube.com/watch?v=HcqFoWCsGdw
 
-Create a shopping list:
-mathematica
-Copy code
-Enter a command: create Shopping
-Response: List "Shopping" created
-Create a to-do list:
-mathematica
-Copy code
-Enter a command: create ToDo
-Response: List "ToDo" created
-Show the list of lists:
-yaml
-Copy code
-Enter a command: catalog
-Response: Shopping ToDo
-Add items to the shopping list:
-mathematica
-Copy code
-Enter a command: edit Shopping add "Milk"
-Response: Item "Milk" added to list "Shopping"
-Enter a command: edit Shopping add "Eggs"
-Response: Item "Eggs" added to list "Shopping"
-Show the shopping list items:
-yaml
-Copy code
-Enter a command: edit Shopping show
-Response: Milk Eggs
-Remove an item from the shopping list:
-csharp
-Copy code
-Enter a command: edit Shopping remove 1
-Response: Item 1 removed from list "Shopping"
-Display the shopping list:
-yaml
-Copy code
-Enter a command: display Shopping
-Response: Milk
-Delete the to-do list:
-mathematica
-Copy code
-Enter a command: delete ToDo
-Response: List "ToDo" deleted
-Show the list of lists again:
-yaml
-Copy code
-Enter a command: catalog
-Response: Shopping
-Exit the list manager:
-bash
-Copy code
-Enter a command: exit
-Response: Server shutting down
+    ## Requirements
+
+    - Python 3.6 or higher
+
+    ## Server
+
+    To start the server, run the following command:
+
+    ```bash
+    python server.py <port>
+    ```
+
+    Replace `<port>` with the desired port number on which you want the server to listen.
+
+    ### Features
+
+    The server supports the following commands:
+
+    - `catalog`: List all the lists with their ID and title.
+    - `create <list title>`: Create a new list with the specified title.
+    - `edit <list number>`: Edit the list with the specified ID.
+      - `show`: Show the list items.
+      - `add <list item text>`: Add an item to the list.
+      - `remove <list item number>`: Remove an item from the list by item number.
+      - `quit`: Exit edit mode.
+    - `display <list number>`: Display the list with the specified ID.
+    - `delete <list number>`: Delete the list with the specified ID.
+    - `exit`: Exit the server.
+
+    ## Client
+
+    To start the client, run the following command:
+
+    ```bash
+    python client.py <server_ip> <server_port>
+    ```
+
+    Replace `<server_ip>` with the IP address of the server and `<server_port>` with the port number on which the server is listening.
+
+    Enter the desired commands at the "Enter a command:" prompt. The client will send the command to the server and display the server's response.
+    ```

@@ -1,0 +1,57 @@
+Thu Apr 27 18:37:11 2023 REQUEST INFO from ('127.0.0.1', 58852): catalog
+Thu Apr 27 18:37:11 2023 RESPONSE INFO: No lists created yet
+Thu Apr 27 18:37:11 2023 REQUEST INFO from ('127.0.0.1', 58852): 
+Thu Apr 27 18:37:24 2023 REQUEST INFO from ('127.0.0.1', 58854): create
+Thu Apr 27 18:37:24 2023 RESPONSE INFO: Missing element: create usage: create <list title>
+Thu Apr 27 18:37:24 2023 REQUEST INFO from ('127.0.0.1', 58854): 
+Thu Apr 27 18:37:37 2023 REQUEST INFO from ('127.0.0.1', 58856): create Shopping
+Thu Apr 27 18:37:38 2023 RESPONSE INFO: List "Shopping" created with ID 1
+Thu Apr 27 18:37:38 2023 REQUEST INFO from ('127.0.0.1', 58856): 
+Thu Apr 27 18:38:02 2023 REQUEST INFO from ('127.0.0.1', 58858): edit
+Thu Apr 27 18:38:02 2023 RESPONSE INFO: Missing element: edit usage: edit <list number>
+Thu Apr 27 18:38:02 2023 REQUEST INFO from ('127.0.0.1', 58858): 
+Thu Apr 27 18:38:08 2023 REQUEST INFO from ('127.0.0.1', 58860): edit 1
+Thu Apr 27 18:38:08 2023 RESPONSE INFO: You are now in edit mode. Enter 'quit' to exit edit mode
+
+Thu Apr 27 18:38:08 2023 REQUEST INFO from ('127.0.0.1', 58860): 
+Thu Apr 27 18:38:27 2023 REQUEST INFO from ('127.0.0.1', 58862): add "Milk"
+Thu Apr 27 18:38:27 2023 RESPONSE INFO: Item ""Milk"" added to list with ID 1
+Thu Apr 27 18:38:27 2023 REQUEST INFO from ('127.0.0.1', 58862): 
+Thu Apr 27 18:38:37 2023 REQUEST INFO from ('127.0.0.1', 58864): add "Orange"
+Thu Apr 27 18:38:37 2023 RESPONSE INFO: Item ""Orange"" added to list with ID 1
+Thu Apr 27 18:38:37 2023 REQUEST INFO from ('127.0.0.1', 58864): 
+Thu Apr 27 18:38:42 2023 REQUEST INFO from ('127.0.0.1', 58866): show
+Thu Apr 27 18:38:42 2023 RESPONSE INFO: Shopping "Milk" "Orange"
+Thu Apr 27 18:38:42 2023 REQUEST INFO from ('127.0.0.1', 58866): 
+Thu Apr 27 18:39:23 2023 REQUEST INFO from ('127.0.0.1', 58868): remove 1
+Thu Apr 27 18:39:23 2023 RESPONSE INFO: Item 1 removed from list with ID 1
+Thu Apr 27 18:39:23 2023 REQUEST INFO from ('127.0.0.1', 58868): 
+Thu Apr 27 18:39:25 2023 REQUEST INFO from ('127.0.0.1', 58870): show
+Thu Apr 27 18:39:25 2023 RESPONSE INFO: Shopping "Orange"
+Thu Apr 27 18:39:25 2023 REQUEST INFO from ('127.0.0.1', 58870): 
+Thu Apr 27 18:39:40 2023 REQUEST INFO from ('127.0.0.1', 58872): quit
+Thu Apr 27 18:39:40 2023 RESPONSE INFO: Edit mode exited
+Thu Apr 27 18:39:40 2023 REQUEST INFO from ('127.0.0.1', 58872): 
+Thu Apr 27 18:39:49 2023 REQUEST INFO from ('127.0.0.1', 58874): display
+Thu Apr 27 18:39:49 2023 RESPONSE INFO: Missing element: display usage: display <list number>
+Thu Apr 27 18:39:49 2023 REQUEST INFO from ('127.0.0.1', 58874): 
+Thu Apr 27 18:39:57 2023 REQUEST INFO from ('127.0.0.1', 58876): display 1
+Thu Apr 27 18:39:57 2023 RESPONSE INFO: "Orange"
+Thu Apr 27 18:39:57 2023 REQUEST INFO from ('127.0.0.1', 58876): 
+Thu Apr 27 18:40:14 2023 REQUEST INFO from ('127.0.0.1', 58878): delete 1
+Thu Apr 27 18:40:14 2023 RESPONSE INFO: List with ID 1 deleted
+Thu Apr 27 18:40:14 2023 REQUEST INFO from ('127.0.0.1', 58878): 
+Thu Apr 27 18:40:21 2023 REQUEST INFO from ('127.0.0.1', 58880): catalog
+Thu Apr 27 18:40:21 2023 RESPONSE INFO: No lists created yet
+Thu Apr 27 18:40:21 2023 REQUEST INFO from ('127.0.0.1', 58880): 
+Thu Apr 27 18:41:03 2023 REQUEST INFO from ('127.0.0.1', 58886): fhjdsaf
+Thu Apr 27 18:41:03 2023 RESPONSE INFO: Invalid command: fhjdsaf
+Valid commands are:
+i. catalog
+ii. create <list title>
+iii. edit <list number>
+iv. display <list number>
+v. delete <list number>
+vi. exit
+
+Thu Apr 27 18:41:03 2023 REQUEST INFO from ('127.0.0.1', 58886): 
